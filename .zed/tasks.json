@@ -1,0 +1,7 @@
+[
+  {
+    "label": "run",
+    "command": "rm property.csv || scrapy crawl kleinanzeigen_houses -o property.csv -t csv",
+    "allow_concurrent_runs": false
+  }
+]

@@ -1,0 +1,21 @@
+{
+  "languages": {
+    "Python": {
+      "formatter": "language_server",
+      "enable_language_server": true,
+      "remove_trailing_whitespace_on_save": true,
+      "inlay_hints": {
+        "enabled": true
+      },
+      "format_on_save": {
+        "external": {
+          "command": "black",
+          "arguments": ["-"]
+        }
+      },
+      "code_actions_on_format": {
+        "source.oraganizeImports": true
+      }
+    }
+  }
+}
