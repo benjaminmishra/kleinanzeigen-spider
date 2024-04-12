@@ -17,4 +17,6 @@ This will produce a csv file named output.csv in the root directory of the proje
 ``` scrapy crawl kleinanzeigen_houses -o output.csv ```
 
 # CHANGE SETTINGS SUCH AS LOCATION
-To change settings related to this project. You can go to settings.py file.
+To change settings related to this project. You can go to settings.py [./settings.py(https://github.com/benjaminmishra/kleinanzeigen-spider/blob/main/scrpae/settings.py)] file.
+
+Here you can find settings such as MAIN_AREA , SUB_AREAS and ZIMMERS etc.
