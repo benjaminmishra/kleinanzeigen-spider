@@ -17,7 +17,7 @@ NEWSPIDER_MODULE = "scrpae.spiders"
 #USER_AGENT = "scrpae (+http://www.yourdomain.com)"
 
 # Obey robots.txt rules
-ROBOTSTXT_OBEY = True
+ROBOTSTXT_OBEY = False
 
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
 #CONCURRENT_REQUESTS = 32
@@ -97,13 +97,17 @@ FEED_EXPORT_ENCODING = "utf-8"
 
 ########################################### DON'T MODIFY ANYTHING ABOVE THIS ##############################################
 
-# URL To Scrape
+# URL To Scrape - Here you can add more URLs after a comma. The scraper will then go to each url and scrpae them.
+# Example : START_URLS = [
+#    'https://www.kleinanzeigen.de/s-haus-kaufen/berlin/c208l3331',
+#    'https://www.kleinanzeigen.de/s-haus-kaufen/rodolstadt/c208l3231',
+#]
 START_URLS = [
-    'https://www.kleinanzeigen.de/s-haus-kaufen/berlin/c208l3331'
+    'https://www.kleinanzeigen.de/s-haus-kaufen/berlin/c208l3331',
 ]
 
 # Here we define all the filter criterias
 MAIN_AREA = "Berlin"
-SUB_AREAS = ["Zehlendorf","Heiligensee","Neukölln","Tempelhof"]
-ZIMMER = 4 # 4 and above
-GRUNDSTUCK = 200.00 # 500 meter square and above
+SUB_AREAS = ["Zehlendorf","Heiligensee","Neukölln","Tempelhof"] # result will only include these sub areas
+ZIMMER = 4 # 4 and above only will be included in the result.
+GRUNDSTUCK = 200.00 # 200 meter square and above only will be incuded in the result
