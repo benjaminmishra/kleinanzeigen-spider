@@ -29,3 +29,4 @@ class House(scrapy.Item):
     grundstuck = scrapy.Field(serializer=to_decimal)
     zimmer_count = scrapy.Field(serializer=to_int)
     description = scrapy.Field()
+    link = scrapy.Field()

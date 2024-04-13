@@ -36,6 +36,7 @@ class KleinanzeigenSpider(scrapy.Spider):
             default = 0,
         )
         house['description'] = response.css('#viewad-description-text').get()
+        house['link'] = response.url
         return house
 
     def extract_with_default(self,selector, xpath_query, default=None, post_process=None):
